@@ -17,10 +17,10 @@ def value():
 
  for k in range(1,4):
   for i in range(1,12):
-   string='//*[@id="mes_abril"]/div/table/tbody/tr['+str(i)+']/th['+str(k)+']/strong/text()'
+   string='//*[@id="mes_junio"]/div/table/tbody/tr['+str(i)+']/th['+str(k)+']/strong/text()'
    dia=tree.xpath(string)
    if(len(dia)>0):
-    string='//*[@id="mes_abril"]/div/table/tbody/tr['+str(i)+']/td['+str(k)+']/text()'
+    string='//*[@id="mes_junio"]/div/table/tbody/tr['+str(i)+']/td['+str(k)+']/text()'
     valor=tree.xpath(string)
     clues['date'].append(dia)
     clues['price'].append(valor)
