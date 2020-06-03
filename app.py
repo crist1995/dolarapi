@@ -7,7 +7,7 @@ def value():
 
  page = requests.get('http://www.sii.cl/valores_y_fechas/dolar/dolar2020.htm')
  tree = html.fromstring(page.content)
- today= int(str(date.today()).split('-')[2])
+ today= int(str(date.today()).split('-')[2])-1
 
  clues={}
  date=[]
