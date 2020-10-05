@@ -27,5 +27,5 @@ def value():
  value=0
  for i in range(len(clues['date'])):
   if(int(clues['date'][i][0])== today):
-   value=clues['price'][i]
- return 2*value
+   value=2*clues['price'][i]
+ return value
